@@ -1,4 +1,4 @@
-.Button {
+.ButtonComponent {
   font-size: 1rem;
   font-family: var(--type-first);
   cursor: pointer;
@@ -12,12 +12,12 @@
   transition: .2s;
 }
 
-.Button:hover, .Button:focus {
+.ButtonComponent:hover, .ButtonComponent:focus {
   outline: none;
   box-shadow: 0 0 0 2px #fea, 0 0 0 3px #fb1;
 }
 
-.Button:disabled {
+.ButtonComponent:disabled {
   opacity: 0.6;
   cursor: wait;
 }

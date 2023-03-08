@@ -1,8 +1,8 @@
-.Input {
+.InputComponent {
   margin-bottom: 1rem;
 }
 
-.Input input {
+.InputComponent input {
   border: 1px solid #eee;
   display: block;
   width: 100%;
@@ -13,21 +13,21 @@
   transition: .2s;
 }
 
-.Input input:hover, .Input input:focus {
+.InputComponent input:hover, .InputComponent input:focus {
   outline: none;
   border-color: #fb1;
   box-shadow: 0 0 0 3px #fea;
   background-color: #fff;
 }
 
-.Input label {
+.InputComponent label {
   display: block;
   font-size: 1rem;
   line-height: 1;
   padding-bottom: 0.5rem;
 }
 
-.Input p {
+.InputComponent p {
   color: #f31;
   font-size: .875rem;
   margin-top: .25rem;
