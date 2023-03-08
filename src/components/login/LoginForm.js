@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "../Form/Button";
 import Input from "../Form/Input";
 
 const LoginForm = () => {
@@ -14,7 +15,9 @@ const LoginForm = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ username, password }),
-    }).then(res => res.json()).then(json => console.log(json))
+    })
+      .then((res) => res.json())
+      .then((json) => console.log(json));
   }
 
   return (
@@ -23,7 +26,7 @@ const LoginForm = () => {
       <form action="" onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" />
         <Input label="Senha" type="password" name="password" />
-        <button>Enviar</button>
+        <Button> Entrar </Button>
       </form>
       <Link to="/login/criar">Cadastro</Link>
     </section>
