@@ -1,0 +1,61 @@
+.LoginFormComponent form {
+  margin-bottom: 2rem;
+}
+
+.LoginFormComponent .perdeu {
+  display: inline-block;
+  color: #666;
+  padding: 0.5rem 0;
+  line-height: 1;
+}
+
+.LoginFormComponent .perdeu::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  display: block;
+}
+
+.LoginFormComponent .cadastro p {
+  margin: 2rem 0;
+}
+
+.LoginFormComponent h2 {
+  font-family: var(--type-second);
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.LoginFormComponent h2::after {
+  content: '';
+  display: block;
+  background-color: #ddd;
+  height: 0.5rem;
+  width: 3rem;
+  border-radius: 0.2rem;
+}
+
+.LoginFormComponent .link {
+  font-size: 1rem;
+  font-family: var(--type-first);
+  cursor: pointer;
+  border: none;
+  border-radius: .4rem;
+  background-color: #fb1;
+  color: #764701;
+  min-width: 8rem;
+  padding: .8rem 1.2rem;
+  box-sizing: border-box;
+  transition: .2s;
+}
+
+.LoginFormComponent .link:hover, .LoginFormComponent .link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #fea, 0 0 0 3px #fb1;
+}
+
+.LoginFormComponent .link:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
