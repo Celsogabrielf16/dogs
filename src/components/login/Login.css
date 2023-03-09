@@ -1,0 +1,32 @@
+.LoginComponent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 5rem);
+  gap: 2rem;
+}
+
+.LoginComponent::before {
+  content: '';
+  display: block;
+  background: url('../../Assets/login.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.LoginComponent .forms {
+  max-width: 30rem;
+  padding: 2rem;
+}
+
+@media (max-width: 40rem) {
+  .LoginComponent {
+    grid-template-columns: 1fr;
+  }
+
+  .LoginComponent::before {
+    display: none;
+  }
+
+  .LoginComponent .forms {
+    max-width: 100%;
+  }
+}
