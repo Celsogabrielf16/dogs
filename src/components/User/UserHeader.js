@@ -8,7 +8,6 @@ const UserHeader = () => {
   const location = useLocation();
 
   React.useEffect(() => {
-    console.log(location.pathname);
     switch (location.pathname) {
       case '/conta/estatisticas':
         setTitle('Estatísticas')
