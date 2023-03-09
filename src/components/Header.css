@@ -1,4 +1,4 @@
-header {
+.HeaderComponent {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 0;
   position: fixed;
@@ -8,24 +8,24 @@ header {
   top: 0;
 }
 
-header nav {
+.HeaderComponent nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
 }
 
-header .logo {
+.HeaderComponent .logo {
   padding: 0.5rem 0;
 }
 
-header .login{
+.HeaderComponent .login{
   color: #333;
   display: flex;
   align-items: center;
 }
 
-header .login::after {
+.HeaderComponent .login::after {
   content: '';
   display: inline-block;
   width: 14px;
