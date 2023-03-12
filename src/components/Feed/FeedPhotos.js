@@ -6,12 +6,12 @@ import Loading from "../Helper/Loading";
 import FeedPhotosItem from "./FeedPhotosItem";
 import './FeedPhotos.css'
 
-const FeedPhotos = () => {
+const FeedPhotos = ({setModalPhoto}) => {
   const { data, loading, error, request } = useFetch();
 
   React.useEffect(() => {
     async function fetchPhotos() {
-      const { url, options } = PHOTOS_GET({ page: 1, total: 6, user: 0 });
+      const { url, options } = PHOTOS_GET({ page: 1, total: 12, user: 0 });
       const { response, json } = await request(url, options);
     }
     fetchPhotos();
@@ -23,7 +23,7 @@ const FeedPhotos = () => {
     return (
       <ul className="feed animeLeft">
         {data.map(photo => {
-          return <FeedPhotosItem key={photo.id} photo={photo}/>
+          return <FeedPhotosItem key={photo.id} photo={photo} setModalPhoto={setModalPhoto}/>
         })}
       </ul>
     );
