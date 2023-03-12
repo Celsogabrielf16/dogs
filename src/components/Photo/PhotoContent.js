@@ -5,9 +5,8 @@ import "./PhotoContent.css";
 
 const PhotoContent = ({ data }) => {
   const { photo, comment } = data;
-  console.log(photo);
   return (
-    <div className="PhotoContentContainer">
+    <div className="PhotoContentComponent">
       <div className="img">
         <img src={photo.src} alt={photo.title} />
       </div>
