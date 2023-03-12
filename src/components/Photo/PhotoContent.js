@@ -4,7 +4,7 @@ import PhotoComments from "./PhotoComments";
 import "./PhotoContent.css";
 
 const PhotoContent = ({ data }) => {
-  const { photo, comment } = data;
+  const { photo, comments } = data;
   return (
     <div className="PhotoContentComponent">
       <div className="img">
@@ -25,7 +25,7 @@ const PhotoContent = ({ data }) => {
           </ul>
         </div>
       </div>
-      <PhotoComments/>
+      <PhotoComments id={photo.id} comments={comments}/>
     </div>
   );
 };

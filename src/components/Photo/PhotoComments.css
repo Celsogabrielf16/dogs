@@ -1,0 +1,16 @@
+.PhotoCommentsComponent {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  max-height: 100%;
+}
+
+.PhotoCommentsComponent ul {
+  max-height: 250px;
+  overflow-y: scroll;
+  word-break: break-word;
+}
+
+.PhotoCommentsComponent ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
