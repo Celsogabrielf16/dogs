@@ -6,6 +6,7 @@ import useForm from "../../Hooks/useForm";
 import Button from "../Form/Button";
 import Input from "../Form/Input";
 import Error from "../Helper/Error";
+import Head from "../Helper/Head";
 import "./UserPhotoPost.css";
 
 const UserPhotoPost = () => {
@@ -42,6 +43,7 @@ const UserPhotoPost = () => {
 
   return (
     <section className="animeLeft UserPhotoPostComponent">
+      <Head title="Poste sua foto"/>
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
         <Input label="Peso" type="number" name="peso" {...peso} />
