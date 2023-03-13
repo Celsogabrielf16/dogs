@@ -17,6 +17,10 @@
   display: block;
 }
 
+.LoginFormComponent .cadastro {
+  margin: 4rem 0;
+}
+
 .LoginFormComponent .cadastro p {
   margin: 2rem 0;
 }

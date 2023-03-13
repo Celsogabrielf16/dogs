@@ -5,6 +5,12 @@
   margin-bottom: 2rem;
 }
 
+@media (max-width: 40rem) {
+  .UserPhotoPostComponent {
+    grid-template-columns: 1fr;
+  }
+}
+
 .UserPhotoPostComponent #img {
   margin-bottom: 1rem;
 }
