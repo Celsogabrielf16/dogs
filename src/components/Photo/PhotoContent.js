@@ -6,11 +6,11 @@ import PhotoComments from "./PhotoComments";
 import "./PhotoContent.css";
 import PhotoDelete from "./PhotoDelete";
 
-const PhotoContent = ({ data }) => {
+const PhotoContent = ({ data, single }) => {
   const user = React.useContext(UserContext);
   const { photo, comments } = data;
   return (
-    <div className="PhotoContentComponent">
+    <div className={`PhotoContentComponent ${single ? 'single' : 'mult'}`}>
       <div className="img">
         <Image src={photo.src} alt={photo.title}/>
       </div>

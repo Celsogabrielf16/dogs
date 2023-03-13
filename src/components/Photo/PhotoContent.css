@@ -12,6 +12,11 @@
   animation: scaleUp 0.3s forwards;
 }
 
+.PhotoContentComponent.single {
+  grid-template-columns: 1fr;
+  height: auto;
+}
+
 @keyframes scaleUp {
   to {
     opacity: initial;
@@ -21,6 +26,10 @@
 
 .PhotoContentComponent .details {
   padding: 2rem 2rem 0 2rem;
+}
+
+.PhotoContentComponent.single .details {
+  padding: 2rem 0 0 0;
 }
 
 .PhotoContentComponent .details .title a {
@@ -36,16 +45,21 @@
   grid-row: 1/4;
 }
 
+.PhotoContentComponent.single .img {
+  grid-row: 1;
+  border-radius: 0.2rem;
+}
+
 .PhotoCommentsComponent {
   padding: 0 2rem;
 }
 
 @media (max-width: 64rem) {
-  .PhotoContentComponent {
+  .PhotoContentComponent.mult {
     height: auto;
     max-height: calc(100vh - 4rem);
-    overflow-y: auto;
     grid-template-columns: minmax(20rem, 40rem);
+    overflow-y: auto;
   }
 
   .PhotoContentComponent .img {
